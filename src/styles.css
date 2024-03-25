@@ -1,0 +1,258 @@
+:root {
+
+  --primary-bg-color: #7828B4;
+  --secondary-bg-color:#F2F2F2;
+  --container-bg-color: #9013FE;
+  --Function-bar: #EBEBEB;
+
+}
+.Content{
+  background-color: var(--secondary-bg-color);
+  height: 737px;
+}
+.Haeder{
+  background-color: var(--primary-bg-color);
+  height: 70px;
+  width: 100%;
+  font-family: Optima-ExtraBlack;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+.searchBox{
+  font-family: Roboto-Italic;
+  font-size: 20px;
+  color: rgba(255,255,255,0.50);
+  margin-left: 300px;
+
+  display: inline;
+
+}
+
+.haveFun{
+  margin-left: 50px;
+  display: inline;
+  margin-top: 20px;
+  font-weight: bold;
+}
+input[type="text"] {
+  border: none;        /* 移除邊框 */
+  outline: none;       /* 移除外框，在焦點時不會出現 */
+  border-bottom: 2px solid #ffffff; /* 增加底部邊框 */
+  padding: 5px 0;      /* 上下間距 */
+  background-color: transparent; /* 透明背景 */
+  width: 430px;
+}
+
+
+.FunctionBox{
+
+  width: 300px;
+  height: 500px;
+  margin-left: 50px;
+
+
+
+}
+.Categories{
+  background-color: var(--Function-bar);
+  width: 300px;
+  height: 10%;
+
+  font-size: 20px;
+  color: #000000;
+   display: inline-block;
+  width: 300px;
+
+}
+.From{
+  margin-right: 10px;
+  display: inline-block;
+  width: 50px;
+}
+.To{
+  margin-right: 10px;
+  display: inline-block;
+  width: 50px;
+}
+.checkboxsCategories{
+  font-weight: bold;
+
+}
+.checkboxs{
+  margin-left: 30px;
+  display: inline-block;
+  width: 300px;
+  height: 30px;
+}
+
+input[type="checkbox"] {
+  width: 20px; /* 或其他你希望的大小 */
+  height: 20px;
+
+  margin-right: 10px;
+}
+.Dates{
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000000;
+  display: inline-block;
+  width: 300px;
+
+}
+
+.Date{
+  background-color: var(--Function-bar);
+  width: 300px;
+  height: 32%;
+  margin-top: 1px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000000;
+}
+
+.Location{
+  background-color: var(--Function-bar);
+  width: 300px;
+  height: 16%;
+  display: inline-block;
+}
+.LocationsOption{
+  width: 300px;
+  height: 70px;
+  display: inline-block;
+}
+
+.LocationDiv{
+  font-weight: bold;
+  display: inline-block;
+  width: 300px;
+  height: 40px;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+.card-title{
+  font-size: 30px;
+  color: var(--primary-bg-color);
+}
+.card-description{
+
+  font-size: 14px;
+}
+.card-footer{
+  font-size: 14px;
+}
+
+.cardimg{
+
+  width: 90px;
+  height: 90px;
+}
+
+
+.card{
+
+  display: flex;
+  width: 500px;
+  height: 90px;
+}
+.whhite{
+  width: 50px;
+}
+
+
+.rightContentP{
+  position: relative;
+
+}
+.paginationOutside{
+
+  width: 560px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between; /* 這將使.pagination元素之間有空間 */
+  align-items: center; /* 這將使.pagination元素垂直居中 */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: absolute;
+  right: 85px;
+  bottom: -80px;
+
+}
+
+.paginationActive {
+  background-color: #007BFF;
+  color: white;
+}
+.paginations{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  display: flex; /* 將此設定為flex容器 */
+  justify-content: center; /* 這將使文字水平居中 */
+  align-items: center; /* 這將使文字垂直居中 */
+  color: var( --primary-bg-color);
+  margin-left:1px;
+  border-radius: 4px;
+
+  background-color:#FFFFFF;
+
+
+}
+
+.paginations:hover {
+  cursor: pointer;
+  background-color:var( --primary-bg-color);
+  color:#FFFFFF ;
+}
+
+
+.active {
+  background-color:var( --primary-bg-color);
+  color:#FFFFFF ;
+}
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #7828B4;
+}
+
+.scrollable-container {
+  width: 900px; /* 固定寬度 */
+  height: 600px; /* 固定高度 */
+  overflow-y: scroll; /* 垂直滾動 */
+  overflow-x: hidden;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.rightContent {
+  margin-bottom: 10px; /* 每個卡片之間的間距 */
+}
+
+.slide-panel:hover {
+  opacity: 1;
+}
+
+.slide-panel::-webkit-scrollbar {
+  width: 10px; /* 滾動條的寬度 */
+}
+
+/* 滾動條滑塊樣式 */
+.slide-panel::-webkit-scrollbar-thumb {
+  background: #888; /* 滾動條顏色 */
+  border-radius: 15px; /* 圓角 */
+}
+
+/* 滾動條滑塊懸停樣式 */
+.slide-panel::-webkit-scrollbar-thumb:hover {
+  background: #555; /* 滾動條懸停時的顏色 */
+}
+
+/* 隱藏滾動條的上下箭頭 */
+

@@ -1,0 +1,7 @@
+<div class="paginations" (click)="PrevClick()">&laquo;</div>
+<div *ngFor="let page of pagination.pages" class="paginations pages" [ngClass]="page == pagination.currentPage ? 'active-page ' : '' " (click)="goToPage(page)">
+  {{ page }}
+</div>
+<div class="paginations" (click)="NextClick()">&raquo;</div>
+
+

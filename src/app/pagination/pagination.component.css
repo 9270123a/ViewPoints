@@ -1,0 +1,16 @@
+.paginations {
+  display: inline-block;
+  margin-right: 5px; /* 添加間距 */
+  /* 其他需要的樣式，比如邊框、背景、顏色等 */
+}
+
+.pages {
+  cursor: pointer; /* 如果頁碼是可點擊的 */
+  /* 其他針對頁碼的樣式 */
+}
+
+.active-page {
+  background-color: #7828B4 ;
+  color:white;
+}
+

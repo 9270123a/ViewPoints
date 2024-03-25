@@ -1,0 +1,70 @@
+<div class = "Content">
+  <div class=" Haeder">
+
+      <div class="haveFun">HaveFun</div>
+      <app-search (SearchKeyWord)="handleSearch($event)"></app-search>
+
+
+  </div>
+
+<div class = "MainContent container-fluid">
+
+  <div class = "row">
+  <div class= "LeftBar  col-4 ">
+      <div class= "FunctionBox" >
+
+              <div class = "Location">
+                  <div class = "LocationDiv">Location</div>
+                  <div class = "LocationsOption">
+                      <select>
+                      <option>Taiwan</option>
+                      </select>
+                  </div>
+
+              </div>
+
+
+              <div class="Date">
+                  <div>
+                  <div class = "Dates">Date</div>
+                  <div class = "Dates">
+                      <div class="From">From</div>
+                      <input type="date">
+                  </div>
+                  <div class = "Dates">
+                      <div class="To">To</div>
+                      <input type="date">
+                  </div>
+
+              </div>
+              </div>
+              <div class = "Categories " *ngFor="let item of category.categoryData">
+                  <div class= "checkboxs"><input type="checkbox" (change)="onCheckboxChange($event, item.id)">{{item.name}}</div>
+              </div>
+
+
+
+      </div>
+  </div>
+      <div class ="rightBar col-8">
+
+
+          <div class="scrollable-container">
+            <div class="task" *ngFor="let view of allData.data">
+              <app-div [data] = "view"></app-div>
+            </div>
+
+          </div>
+
+              <div class ="rightContentP">
+
+                  <div class="paginationOutside">
+                    <app-pagination [total]="allData.total" (pageChange)="changePage($event)"></app-pagination>
+          </div>
+              </div>
+      </div>
+  </div>
+</div>
+
+
+</div>
