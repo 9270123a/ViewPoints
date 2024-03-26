@@ -58,7 +58,7 @@ src/
 安裝
 克隆項目到本地倉庫：
 
-『`bash
+```bash
 git clone <項目倉庫URL>
 
 
@@ -74,7 +74,7 @@ npm install
 在項目根目錄下，執行以下指令啟動開發服務器：
 
 
-『`bash
+```bash
 ng serve
 
 
