@@ -28,30 +28,7 @@ ViewPoint 應用程式是一個網路平台，旨在為使用者提供探索和�
 
 分頁顯示: 搜尋結果支援分頁顯示，方便用戶瀏覽。
 
-
-## 項目結構
-
-
-```bash
-src/
-|-- app/
-| |-- app.component.css // 應用的全域樣式
-| |-- app.component.html // 應用的主元件模板
-| |-- app.component.spec.ts // 主元件的單元測試
-| |-- app.component.ts // 應用的根元件邏輯
-| |-- app.module.ts // 應用的主模組文件
-| |-- app-routing.module.ts // 應用的路由模組
-| |-- [其他元件和服務]
-|-- assets/
-| |-- [靜態資源]
-|-- environments/
-| |-- environment.ts // 環境變數配置
-|-- [其他檔案和資料夾]
-
-
-
-```
-
+Service: 透過RXJS 進行資料流傳遞，並將分頁與選單資訊渲染至頁面。
 
 ## 開始使用
 
